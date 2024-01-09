@@ -1,0 +1,159 @@
+*{ 
+   margin:0; 
+   padding:0;
+   box-sizing: border-box;
+   border: none;
+   outline: none;
+}
+
+body{ 
+    height:100vh;
+    background-image:url(./assets/background.avif);
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+}
+
+.container{ 
+   position:relative; 
+   width:20rem;
+   background:rgba(255, 255, 255, .1);
+   backdrop-filter:blur(20px); 
+   border:2px solid rgba(255, 255, 255, .2);
+   border-radius:12px;
+   padding:20px 0 20px 8.5px;
+}
+
+.search-box input{ 
+    background:linear-gradient(160deg ,#9B73A3 ,#C194BA ,#E1BBCF, #E3BEC3, #F1DDDF); 
+    color: #ffffff;
+    padding:0.6rem 2.8rem 0.6rem 1.6rem;
+    border-radius: 8px;
+    border:0.5px solid;
+    font-size: 1rem;
+}
+
+ input:focus{ 
+   border:.5px solid #ffffff;
+   outline:1px solid #E3BEC3; 
+}
+
+input::placeholder{ 
+    color: #FFFFFF;
+    font-size:1rem;
+}
+
+.search-box i{ 
+   position: relative;
+   left: 25px;
+} 
+
+.search-box button{ 
+    position: relative;
+    right:3.6rem; 
+    height:100%;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.weather-body{ 
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block:20px;
+    transform: translateY(0%);
+}
+
+.weather-body img{ 
+    width:60%;
+}
+
+.weather-box{ 
+    margin-block:20px;
+    text-align: center;
+}
+
+.weather-box .temperature{ 
+    font-size:2.6rem;
+    text-align: center;
+    font-weight:bold;
+    position: relative;
+}
+
+.weather-box .temperature sup{ 
+    font-size:1rem;
+    position: absolute;
+    font-weight: 100;
+}
+
+.weather-box .status{ 
+    font-size:1.4rem;
+    font-weight:600;
+    text-transform: capitalize;
+}
+
+.weather-details{ 
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+
+.humidity , .wind{ 
+    display:flex;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+}
+
+.humidity{ 
+   margin-left:20px;
+}
+
+.humidity i , .wind i{ 
+    font-size: 32px;
+}
+
+.wind{ 
+    margin-right:20px;
+}
+
+.text #info-humidity , .text #wind-speed{ 
+    font-size: 22px;
+    font-weight:500;
+}
+
+.text p{ 
+    font-size:14px;
+    font-weight:lighter;
+} 
+
+.location-not-found{
+    margin-top:20px; 
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-not-found h1{ 
+    font:20px 'Nunito', sans-serif;
+    text-align: center;
+    color:#d7cfcf;
+    margin-block-end:15px;
+}
+
+.location-not-found img{ 
+    width:80%;
+}
+
